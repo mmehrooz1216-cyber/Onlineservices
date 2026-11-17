@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Composing &amp; CV Maker | Executive Document, Resume &amp; Software Studio</title>
+  <meta name="description" content="Online Composing &amp; CV Maker — Professional English &amp; Urdu Composing, ATS-Friendly &amp; Europass CVs, Academic Projects, and Custom Web &amp; Mobile Software Development. Order directly via WhatsApp." />
+  <meta name="keywords" content="Online Composing, CV Maker, ATS Friendly CV, Europass CV, Urdu Composing, Thesis Formatting, Software Development, Web Development, Mobile App Development, Pakistan" />
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#071124',
+              900: '#0B192C',
+              800: '#132744',
+              700: '#1D375E',
+            },
+            gold: {
+              300: '#E8CD7B',
+              400: '#D4AF37',
+              500: '#C59B27',
+              600: '#A47E1B',
+            },
+            cream: {
+              50: '#FDFBF7',
+              100: '#F7F4ED',
+              200: '#ECE6D8',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #0B192C;
+      background-color: #FDFBF7;
+      overflow-x: hidden;
+    }
+    .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .service-row {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .service-row:hover {
+      background-color: #FFFFFF;
+      transform: translateX(6px);
+    }
+    .service-row:hover .row-arrow {
+      transform: translate(3px, -3px);
+      color: #C59B27;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B192C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C59B27;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-navy-900 selection:text-gold-300">
+
+  <!-- Minimalist Sticky Navigation -->
+  <header id="navbar" class="sticky top-0 z-50 bg-cream-50/95 backdrop-blur-md border-b border-navy-900/10 transition-all">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="#home" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 bg-white border border-gold-400/50 flex items-center justify-center overflow-hidden shadow-sm">
+          <img src="logo.png" alt="Online Composing & CV Maker Logo"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+               class="w-full h-full object-contain p-1" />
+          <span style="display:none;" class="w-full h-full bg-navy-900 text-gold-400 items-center justify-center font-editorial text-xl font-bold">OC</span>
+        </div>
+        <div>
+          <span class="block font-editorial text-lg md:text-xl font-bold text-navy-900 tracking-tight leading-none">
+            Online Composing
+          </span>
+          <span class="block text-[10px] uppercase tracking-[0.26em] text-gold-600 font-semibold mt-1">
+            &amp; CV Maker Studio
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/80">
+        <a href="#home" class="hover:text-gold-600 transition-colors">Home</a>
+        <a href="#about" class="hover:text-gold-600 transition-colors">About Us</a>
+        <a href="#services" class="hover:text-gold-600 transition-colors">Our Services</a>
+        <a href="#cv-maker" class="hover:text-gold-600 transition-colors">CV Maker</a>
+        <a href="#software" class="hover:text-gold-600 transition-colors">Software Dev</a>
+        <a href="#contact" class="hover:text-gold-600 transition-colors">Contact Us</a>
+      </nav>
+
+      <!-- Direct WhatsApp Action -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum%20Online%20Composing%20%26%20CV%20Maker!%20I%20would%20like%20to%20place%20an%20order."
+           target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2.5 bg-navy-900 hover:bg-navy-800 text-white px-5 py-3 text-xs uppercase tracking-[0.15em] font-semibold border border-gold-400/30 transition-all shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>WhatsApp Order</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4 text-gold-400"></i>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 text-navy-900 border border-navy-900/15 hover:bg-navy-900 hover:text-white transition-colors">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-navy-950 text-white border-t border-gold-400/20 px-6 py-8">
+      <div class="flex flex-col space-y-5 text-sm uppercase tracking-[0.18em] font-medium">
+        <a href="#home" class="mobile-link hover:text-gold-400 transition-colors">01. Home</a>
+        <a href="#about" class="mobile-link hover:text-gold-400 transition-colors">02. About Us</a>
+        <a href="#services" class="mobile-link hover:text-gold-400 transition-colors">03. Composing Services</a>
+        <a href="#cv-maker" class="mobile-link hover:text-gold-400 transition-colors">04. CV Maker Services</a>
+        <a href="#software" class="mobile-link hover:text-gold-400 transition-colors">05. Software Development</a>
+        <a href="#portfolio" class="mobile-link hover:text-gold-400 transition-colors">06. Portfolio &amp; Pricing</a>
+        <a href="#contact" class="mobile-link hover:text-gold-400 transition-colors">07. Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 01. HERO SECTION -->
+  <section id="home" class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 border-b border-navy-900/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Editorial Column -->
+        <div class="lg:col-span-7 space-y-8">
+          <div class="inline-flex items-center gap-3 px-4 py-1.5 bg-navy-900/5 border border-navy-900/10 text-xs uppercase tracking-[0.22em] font-semibold text-navy-900">
+            <span class="w-2 h-2 bg-gold-500"></span>
+            Precision Documentation • Executive CVs • Custom Software
+          </div>
+
+          <h1 class="font-editorial text-4xl sm:text-5xl lg:text-[62px] font-bold text-navy-900 leading-[1.08] tracking-tight">
+            Crafting Distinction in <span class="italic font-normal text-gold-600">Documents,</span> Careers &amp; Digital Systems.
+          </h1>
+
+          <p class="text-base sm:text-lg text-navy-900/75 leading-relaxed max-w-2xl font-normal">
+            <strong>Online Composing &amp; CV Maker</strong> is a dedicated digital studio delivering immaculate English &amp; Urdu typesetting, ATS-compliant international resumes, academic research formatting, and bespoke web &amp; mobile applications—all accessible instantly via WhatsApp.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20place%20an%20order%20for%20your%20services."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-3 bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 px-8 py-4 text-xs uppercase tracking-[0.18em] font-bold transition-all duration-300 shadow-lg shadow-navy-900/15">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Order Now on WhatsApp</span>
+            </a>
+
+            <a href="#services"
+               class="inline-flex items-center gap-3 bg-transparent hover:bg-navy-900/5 text-navy-900 border border-navy-900/25 px-8 py-4 text-xs uppercase tracking-[0.18em] font-bold transition-all">
+              <span>Explore Services</span>
+              <i data-lucide="arrow-down-right" class="w-4 h-4 text-gold-600"></i>
+            </a>
+          </div>
+
+          <!-- Editorial Key Metrics -->
+          <div class="grid grid-cols-3 gap-6 pt-8 border-t border-navy-900/10 max-w-xl">
+            <div>
+              <p class="font-editorial text-3xl font-bold text-navy-900">100%</p>
+              <p class="text-xs uppercase tracking-wider text-navy-900/60 mt-1">ATS &amp; Print Accuracy</p>
+            </div>
+            <div>
+              <p class="font-editorial text-3xl font-bold text-navy-900">24/7</p>
+              <p class="text-xs uppercase tracking-wider text-navy-900/60 mt-1">WhatsApp Desk</p>
+            </div>
+            <div>
+              <p class="font-editorial text-3xl font-bold text-navy-900">Fast</p>
+              <p class="text-xs uppercase tracking-wider text-navy-900/60 mt-1">Same-Day Delivery</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Studio Directory Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-navy-900 text-white p-8 sm:p-10 border border-gold-400/30 shadow-2xl relative">
+            <div class="absolute top-0 right-0 w-24 h-24 border-t-2 border-r-2 border-gold-400/50 pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-24 h-24 border-b-2 border-l-2 border-gold-400/50 pointer-events-none"></div>
+
+            <div class="flex items-center justify-between pb-6 border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Logo" onerror="this.style.display='none'" class="w-7 h-7 object-contain bg-white p-0.5 rounded-sm" />
+                <span class="text-xs uppercase tracking-[0.22em] text-gold-400 font-semibold">Studio Directory</span>
+              </div>
+              <span class="text-xs text-white/60 font-mono">+92 342 7836681</span>
+            </div>
+
+            <div class="divide-y divide-white/10 my-4">
+              <a href="#services" class="py-5 flex items-center justify-between group">
+                <div>
+                  <span class="text-xs font-mono text-gold-400">01</span>
+                  <h3 class="font-editorial text-xl font-semibold mt-0.5 group-hover:text-gold-300 transition-colors">English &amp; Urdu Composing</h3>
+                  <p class="text-xs text-white/60 mt-1">InPage, MS Word, Excel, PDF &amp; Academic Theses</p>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-5 h-5 text-gold-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </a>
+
+              <a href="#cv-maker" class="py-5 flex items-center justify-between group">
+                <div>
+                  <span class="text-xs font-mono text-gold-400">02</span>
+                  <h3 class="font-editorial text-xl font-semibold mt-0.5 group-hover:text-gold-300 transition-colors">Executive &amp; Europass CVs</h3>
+                  <p class="text-xs text-white/60 mt-1">ATS-Optimized Resumes &amp; Tailored Cover Letters</p>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-5 h-5 text-gold-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </a>
+
+              <a href="#software" class="py-5 flex items-center justify-between group">
+                <div>
+                  <span class="text-xs font-mono text-gold-400">03</span>
+                  <h3 class="font-editorial text-xl font-semibold mt-0.5 group-hover:text-gold-300 transition-colors">Software &amp; App Development</h3>
+                  <p class="text-xs text-white/60 mt-1">Custom Websites, Android/iOS Apps &amp; ERP Systems</p>
+                </div>
+                <i data-lucide="arrow-up-right" class="w-5 h-5 text-gold-400 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+              </a>
+            </div>
+
+            <div class="pt-4">
+              <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum%20Online%20Composing%20%26%20CV%20Maker!%20I%20need%20a%20quote%20for%20my%20project."
+                 target="_blank" rel="noopener noreferrer"
+                 class="w-full flex items-center justify-center gap-2 bg-gold-400 hover:bg-gold-300 text-navy-950 py-3.5 text-xs uppercase tracking-[0.18em] font-bold transition-colors">
+                <span>Start Direct Chat</span>
+                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. ABOUT US & FOUNDER PROFILE SECTION -->
+  <section id="about" class="py-24 bg-white border-b border-navy-900/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        
+        <!-- Founder Executive Portrait Column -->
+        <div class="lg:col-span-5">
+          <div class="relative p-3 bg-cream-50 border border-navy-900/15 shadow-xl">
+            <div class="relative overflow-hidden bg-navy-900 aspect-[4/5]">
+              <img src="founder.jpg" alt="Founder - Online Composing & CV Maker"
+                   onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80'"
+                   class="w-full h-full object-cover object-top" />
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-transparent p-6 text-white">
+                <span class="text-[10px] uppercase tracking-[0.24em] text-gold-400 font-bold block">Founder &amp; Lead Consultant</span>
+                <p class="font-editorial text-xl font-bold mt-1">Online Composing &amp; CV Maker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Studio Story & Core Pillars -->
+        <div class="lg:col-span-7 space-y-6 text-navy-900/80 text-base leading-relaxed">
+          <span class="text-xs uppercase tracking-[0.24em] text-gold-600 font-bold block">01 / About Our Studio</span>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-bold text-navy-900 leading-tight">
+            Where Precision Meets Professional Presentation.
+          </h2>
+          <div class="w-16 h-0.5 bg-gold-500"></div>
+
+          <p class="text-lg text-navy-900 font-medium pt-2">
+            At <strong>Online Composing &amp; CV Maker</strong>, we bridge the gap between raw ideas and polished, publication-ready deliverables. Whether you are a student submitting a final-year dissertation, a job seeker applying for international opportunities, or an enterprise scaling with custom software, our studio executes every detail with rigor.
+          </p>
+          <p>
+            Eliminating the hassle of physical visits and slow turnarounds, our entire workflow operates seamlessly online. Simply send your handwritten notes, voice instructions, old resume, or software requirements on WhatsApp, and receive professionally formatted, error-free files directly on your phone or email.
+          </p>
+
+          <div class="grid sm:grid-cols-3 gap-5 pt-4">
+            <div class="p-5 bg-cream-50 border border-navy-900/10">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-gold-600 mb-2.5"></i>
+              <h3 class="font-editorial text-base font-bold text-navy-900">Bilingual Mastery</h3>
+              <p class="text-xs text-navy-900/70 mt-1.5">Flawless English &amp; Urdu (InPage) typesetting with clean layout symmetry.</p>
+            </div>
+            <div class="p-5 bg-cream-50 border border-navy-900/10">
+              <i data-lucide="shield-check" class="w-5 h-5 text-gold-600 mb-2.5"></i>
+              <h3 class="font-editorial text-base font-bold text-navy-900">100% Privacy</h3>
+              <p class="text-xs text-navy-900/70 mt-1.5">Strict confidentiality for your CVs, academic work, and business software.</p>
+            </div>
+            <div class="p-5 bg-cream-50 border border-navy-900/10">
+              <i data-lucide="clock" class="w-5 h-5 text-gold-600 mb-2.5"></i>
+              <h3 class="font-editorial text-base font-bold text-navy-900">Fast Delivery</h3>
+              <p class="text-xs text-navy-900/70 mt-1.5">Urgent same-day turnaround with unlimited revisions until approved.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 03. COMPOSING SERVICES SECTION -->
+  <section id="services" class="py-24 bg-cream-50 border-b border-navy-900/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.24em] text-gold-600 font-bold block mb-3">02 / Composing &amp; Documentation</span>
+          <h2 class="font-editorial text-3xl sm:text-5xl font-bold text-navy-900">
+            Our Composing Services
+          </h2>
+        </div>
+        <p class="text-sm text-navy-900/70 max-w-md">
+          Click any service below to instantly initiate a WhatsApp order with pre-filled service details.
+        </p>
+      </div>
+
+      <div class="border-t border-navy-900/15 divide-y divide-navy-900/15">
+        
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20English%20/%20Urdu%20Composing." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">01</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">English &amp; Urdu Composing</h3>
+              <p class="text-sm text-navy-900/70 mt-1">High-speed accurate typing in MS Word &amp; InPage Urdu (books, exam papers, poetry, legal deeds, and articles).</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20Assignments%20%26%20Academic%20Projects." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">02</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Assignments &amp; Projects</h3>
+              <p class="text-sm text-navy-900/70 mt-1">Well-structured, properly cited, and visually formatted assignments ready for digital submission or printing.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20School,%20College%20%26%20University%20Projects." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">03</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">School, College &amp; University Projects</h3>
+              <p class="text-sm text-navy-900/70 mt-1">Complete thesis formatting, capstone documentation, PowerPoint presentations, and lab manuals.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20Reports%20%26%20Essays." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">04</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Reports &amp; Essays</h3>
+              <p class="text-sm text-navy-900/70 mt-1">Analytical business reports, internship reports, survey summaries, and structured academic essays.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20Business%20%26%20Official%20Documents." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">05</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Business &amp; Official Documents</h3>
+              <p class="text-sm text-navy-900/70 mt-1">Company profiles, proposals, quotations, invoices, agreements, and branded letterheads.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20Letters%20%26%20Applications." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">06</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Letters &amp; Applications</h3>
+              <p class="text-sm text-navy-900/70 mt-1">Visa request letters, embassy cover letters, official job applications, and formal correspondence.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20Typing%20%26%20Formatting." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">07</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Typing &amp; Formatting</h3>
+              <p class="text-sm text-navy-900/70 mt-1">Converting scanned images, handwritten notes, or messy drafts into clean, aligned digital documents.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+        <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order:%20Word,%20PDF%20%26%20Excel%20Work." target="_blank" rel="noopener noreferrer"
+           class="service-row py-7 px-4 sm:px-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 group">
+          <div class="flex items-start sm:items-center gap-6">
+            <span class="font-mono text-sm text-gold-600 font-semibold">08</span>
+            <div>
+              <h3 class="font-editorial text-2xl font-bold text-navy-900 group-hover:text-gold-600 transition-colors">Word, PDF &amp; Excel Work</h3>
+              <p class="text-sm text-navy-900/70 mt-1">Data entry spreadsheets, automated Excel formulas, fillable PDF forms, PDF conversion &amp; merging.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 self-end sm:self-center">
+            <span class="text-xs uppercase tracking-[0.16em] font-semibold text-navy-900/60 group-hover:text-navy-900">Order Service</span>
+            <i data-lucide="arrow-up-right" class="row-arrow w-5 h-5 text-navy-900 transition-transform"></i>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 04. CV MAKER SERVICES SECTION -->
+  <section id="cv-maker" class="py-24 bg-navy-900 text-white border-b border-gold-400/20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.24em] text-gold-400 font-bold block mb-3">03 / Career Branding Studio</span>
+          <h2 class="font-editorial text-3xl sm:text-5xl font-bold text-white">
+            CV Maker Services
+          </h2>
+        </div>
+        <p class="text-sm text-white/70 max-w-md">
+          Engineered to pass Applicant Tracking Systems (ATS) and impress international recruiters across Europe, the Gulf, UK, and North America.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-navy-950/80 border border-white/10 hover:border-gold-400/60 p-8 flex flex-col justify-between transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3 py-1 bg-gold-400/15 text-gold-300 text-[11px] uppercase tracking-widest font-semibold">European Standard</span>
+              <i data-lucide="globe" class="w-5 h-5 text-gold-400"></i>
+            </div>
+            <h3 class="font-editorial text-2xl font-bold text-white group-hover:text-gold-300 transition-colors">Europass CV</h3>
+            <p class="text-sm text-white/70 mt-3 leading-relaxed">
+              Official European Union format tailored for Schengen work permits, study visas, and European job portals with structured competency grids.
+            </p>
+          </div>
+          <div class="pt-8 mt-8 border-t border-white/10">
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order%20a%20Europass%20CV."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-bold text-gold-400 hover:text-white transition-colors">
+              <span>Order Europass CV</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-navy-950/80 border border-gold-400/50 p-8 flex flex-col justify-between transition-all group relative">
+          <div class="absolute top-0 right-6 -translate-y-1/2 bg-gold-400 text-navy-950 text-[10px] uppercase tracking-widest font-bold px-3 py-1">
+            Most Requested
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3 py-1 bg-gold-400/15 text-gold-300 text-[11px] uppercase tracking-widest font-semibold">95%+ ATS Score</span>
+              <i data-lucide="cpu" class="w-5 h-5 text-gold-400"></i>
+            </div>
+            <h3 class="font-editorial text-2xl font-bold text-white group-hover:text-gold-300 transition-colors">ATS Friendly CV</h3>
+            <p class="text-sm text-white/70 mt-3 leading-relaxed">
+              Keyword-rich, machine-readable single-column executive layout built specifically to clear automated HR screening software on LinkedIn &amp; Indeed.
+            </p>
+          </div>
+          <div class="pt-8 mt-8 border-t border-white/10">
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order%20an%20ATS%20Friendly%20CV."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-bold text-gold-400 hover:text-white transition-colors">
+              <span>Order ATS CV</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-navy-950/80 border border-white/10 hover:border-gold-400/60 p-8 flex flex-col justify-between transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3 py-1 bg-gold-400/15 text-gold-300 text-[11px] uppercase tracking-widest font-semibold">Corporate &amp; Gulf</span>
+              <i data-lucide="briefcase" class="w-5 h-5 text-gold-400"></i>
+            </div>
+            <h3 class="font-editorial text-2xl font-bold text-white group-hover:text-gold-300 transition-colors">Professional CV</h3>
+            <p class="text-sm text-white/70 mt-3 leading-relaxed">
+              Polished, authoritative curriculum vitae highlighting leadership milestones, measurable KPIs, and industry credentials for mid-to-senior roles.
+            </p>
+          </div>
+          <div class="pt-8 mt-8 border-t border-white/10">
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order%20a%20Professional%20CV."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-bold text-gold-400 hover:text-white transition-colors">
+              <span>Order Professional CV</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-navy-950/80 border border-white/10 hover:border-gold-400/60 p-8 flex flex-col justify-between transition-all group">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3 py-1 bg-gold-400/15 text-gold-300 text-[11px] uppercase tracking-widest font-semibold">Visual Distinction</span>
+              <i data-lucide="layout-template" class="w-5 h-5 text-gold-400"></i>
+            </div>
+            <h3 class="font-editorial text-2xl font-bold text-white group-hover:text-gold-300 transition-colors">Modern Resume Design</h3>
+            <p class="text-sm text-white/70 mt-3 leading-relaxed">
+              Contemporary two-column layouts with refined typography, subtle color accents, and balanced white space for creative and tech professionals.
+            </p>
+          </div>
+          <div class="pt-8 mt-8 border-t border-white/10">
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order%20a%20Modern%20Resume%20Design."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-bold text-gold-400 hover:text-white transition-colors">
+              <span>Order Modern Resume</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-navy-950/80 border border-white/10 hover:border-gold-400/60 p-8 flex flex-col justify-between transition-all group md:col-span-2 lg:col-span-2">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="px-3 py-1 bg-gold-400/15 text-gold-300 text-[11px] uppercase tracking-widest font-semibold">Persuasive Copywriting</span>
+              <i data-lucide="file-signature" class="w-5 h-5 text-gold-400"></i>
+            </div>
+            <h3 class="font-editorial text-2xl font-bold text-white group-hover:text-gold-300 transition-colors">Cover Letter Writing</h3>
+            <p class="text-sm text-white/70 mt-3 leading-relaxed max-w-2xl">
+              Custom-written, role-specific cover letters that connect your experience directly to the employer’s requirements—available individually or bundled with any CV package in editable Word and print-ready PDF formats.
+            </p>
+          </div>
+          <div class="pt-8 mt-8 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order%20Cover%20Letter%20Writing."
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-bold text-gold-400 hover:text-white transition-colors">
+              <span>Order Cover Letter</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <span class="text-xs text-white/50">Delivered in Editable DOCX + High-Res PDF</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 05. SOFTWARE DEVELOPMENT SERVICES SECTION -->
+  <section id="software" class="py-24 bg-white border-b border-navy-900/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.24em] text-gold-600 font-bold block mb-3">04 / Digital Engineering</span>
+          <h2 class="font-editorial text-3xl sm:text-5xl font-bold text-navy-900">
+            Software Development Services
+          </h2>
+        </div>
+        <p class="text-sm text-navy-900/70 max-w-md">
+          Scalable web platforms, mobile applications, and custom business automation engineered from scratch with full source-code ownership.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="p-8 bg-cream-50 border border-navy-900/10 hover:border-navy-900 transition-all flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-gold-600 font-bold">01 / WEB APPS</span>
+            <h3 class="font-editorial text-2xl font-bold text-navy-900 mt-3">Web Application Development</h3>
+            <p class="text-sm text-navy-900/75 mt-3 leading-relaxed">
+              Full-stack cloud web applications, customer portals, booking engines, and SaaS dashboards with secure authentication and fast performance.
+            </p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20discuss%20Web%20Application%20Development."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-8 pt-5 border-t border-navy-900/10 inline-flex items-center justify-between text-xs uppercase tracking-[0.16em] font-bold text-navy-900 hover:text-gold-600">
+            <span>Request Consultation</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="p-8 bg-cream-50 border border-navy-900/10 hover:border-navy-900 transition-all flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-gold-600 font-bold">02 / MOBILE APPS</span>
+            <h3 class="font-editorial text-2xl font-bold text-navy-900 mt-3">Mobile Application Development</h3>
+            <p class="text-sm text-navy-900/75 mt-3 leading-relaxed">
+              Cross-platform and native Android &amp; iOS mobile applications featuring intuitive UI, push notifications, and real-time API integration.
+            </p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20discuss%20Mobile%20Application%20Development%20(Android%20%26%20iOS)."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-8 pt-5 border-t border-navy-900/10 inline-flex items-center justify-between text-xs uppercase tracking-[0.16em] font-bold text-navy-900 hover:text-gold-600">
+            <span>Request Consultation</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="p-8 bg-cream-50 border border-navy-900/10 hover:border-navy-900 transition-all flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-gold-600 font-bold">03 / BESPOKE SYSTEMS</span>
+            <h3 class="font-editorial text-2xl font-bold text-navy-900 mt-3">Custom Software Development</h3>
+            <p class="text-sm text-navy-900/75 mt-3 leading-relaxed">
+              Tailor-made desktop and cloud software designed around your exact operational workflow, eliminating repetitive manual tasks.
+            </p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20discuss%20Custom%20Software%20Development."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-8 pt-5 border-t border-navy-900/10 inline-flex items-center justify-between text-xs uppercase tracking-[0.16em] font-bold text-navy-900 hover:text-gold-600">
+            <span>Request Consultation</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="p-8 bg-cream-50 border border-navy-900/10 hover:border-navy-900 transition-all flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-gold-600 font-bold">04 / ENTERPRISE TOOLS</span>
+            <h3 class="font-editorial text-2xl font-bold text-navy-900 mt-3">Business Solutions</h3>
+            <p class="text-sm text-navy-900/75 mt-3 leading-relaxed">
+              Point of Sale (POS), inventory management, school/academy management systems, CRM, and automated billing suites.
+            </p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20discuss%20Business%20Software%20Solutions."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-8 pt-5 border-t border-navy-900/10 inline-flex items-center justify-between text-xs uppercase tracking-[0.16em] font-bold text-navy-900 hover:text-gold-600">
+            <span>Request Consultation</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="p-8 bg-cream-50 border border-navy-900/10 hover:border-navy-900 transition-all flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-gold-600 font-bold">05 / WEB PRESENCE</span>
+            <h3 class="font-editorial text-2xl font-bold text-navy-900 mt-3">Custom Website Development</h3>
+            <p class="text-sm text-navy-900/75 mt-3 leading-relaxed">
+              High-converting corporate websites, e-commerce stores, and personal portfolios with SEO optimization, SSL security, and responsive UI.
+            </p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20discuss%20Custom%20Website%20Development."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-8 pt-5 border-t border-navy-900/10 inline-flex items-center justify-between text-xs uppercase tracking-[0.16em] font-bold text-navy-900 hover:text-gold-600">
+            <span>Request Consultation</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="p-8 bg-navy-900 text-white border border-gold-400/40 flex flex-col justify-between">
+          <div>
+            <span class="font-mono text-xs text-gold-400 font-bold">06 / IDEA TO PRODUCT</span>
+            <h3 class="font-editorial text-2xl font-bold text-white mt-3">Client’s Own Ideas &amp; Projects</h3>
+            <p class="text-sm text-white/75 mt-3 leading-relaxed">
+              Have a startup concept, final-year university software project, or custom automation idea? Share your vision and we will architect, build, and deploy it end-to-end.
+            </p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20have%20my%20own%20software/project%20idea%20I%20want%20to%20build."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-8 pt-5 border-t border-white/15 inline-flex items-center justify-between text-xs uppercase tracking-[0.16em] font-bold text-gold-400 hover:text-white">
+            <span>Pitch Your Idea</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 06. SELECTED WORK / PORTFOLIO & PACKAGES -->
+  <section id="portfolio" class="py-24 bg-cream-50 border-b border-navy-900/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-[0.24em] text-gold-600 font-bold block mb-3">05 / Selected Work</span>
+          <h2 class="font-editorial text-3xl sm:text-5xl font-bold text-navy-900">
+            Portfolio Showcase
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap gap-2">
+          <button data-filter="all" class="portfolio-filter active px-4 py-2 text-xs uppercase tracking-widest font-semibold bg-navy-900 text-white transition-colors">All Work</button>
+          <button data-filter="cv" class="portfolio-filter px-4 py-2 text-xs uppercase tracking-widest font-semibold bg-white text-navy-900 border border-navy-900/15 hover:border-navy-900 transition-colors">CV Designs</button>
+          <button data-filter="composing" class="portfolio-filter px-4 py-2 text-xs uppercase tracking-widest font-semibold bg-white text-navy-900 border border-navy-900/15 hover:border-navy-900 transition-colors">Composing</button>
+          <button data-filter="software" class="portfolio-filter px-4 py-2 text-xs uppercase tracking-widest font-semibold bg-white text-navy-900 border border-navy-900/15 hover:border-navy-900 transition-colors">Software</button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-24">
+        
+        <div class="portfolio-item bg-white border border-navy-900/10 p-7 flex flex-col justify-between" data-category="cv">
+          <div>
+            <div class="h-44 bg-navy-900 p-6 flex flex-col justify-between border-b-4 border-gold-400">
+              <span class="text-[10px] uppercase tracking-[0.2em] text-gold-400">Executive ATS Resume</span>
+              <div>
+                <div class="w-2/3 h-2.5 bg-white/80 mb-2"></div>
+                <div class="w-1/2 h-2 bg-gold-400/70 mb-4"></div>
+                <div class="space-y-1.5">
+                  <div class="w-full h-1.5 bg-white/30"></div>
+                  <div class="w-5/6 h-1.5 bg-white/30"></div>
+                  <div class="w-4/6 h-1.5 bg-white/30"></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="font-editorial text-xl font-bold text-navy-900 mt-6">Senior Engineer Europass &amp; ATS Pack</h3>
+            <p class="text-sm text-navy-900/70 mt-2">Dual-format resume &amp; cover letter engineered for European tech &amp; engineering roles.</p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20like%20your%20Executive%20ATS%20Resume%20sample%20and%20want%20a%20similar%20one."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-gold-600 hover:text-navy-900">
+            <span>Order Similar Style</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="portfolio-item bg-white border border-navy-900/10 p-7 flex flex-col justify-between" data-category="composing">
+          <div>
+            <div class="h-44 bg-cream-100 p-6 flex flex-col justify-between border border-navy-900/10 border-b-4 border-b-navy-900">
+              <span class="text-[10px] uppercase tracking-[0.2em] text-navy-900/60 font-bold">Bilingual Typesetting</span>
+              <div class="text-right">
+                <p class="font-editorial text-lg font-bold text-navy-900">اردو اور انگریزی کمپوزنگ</p>
+                <p class="text-xs text-navy-900/60 mt-1">InPage Nastaliq &amp; MS Word Academic Formatting</p>
+              </div>
+            </div>
+            <h3 class="font-editorial text-xl font-bold text-navy-900 mt-6">University Thesis &amp; Urdu Book Layout</h3>
+            <p class="text-sm text-navy-900/70 mt-2">200+ page dissertation with automated table of contents, citations, and print-ready margins.</p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20need%20professional%20Composing%20%26%20Formatting%20like%20your%20portfolio%20sample."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-gold-600 hover:text-navy-900">
+            <span>Order Composing</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="portfolio-item bg-white border border-navy-900/10 p-7 flex flex-col justify-between" data-category="software">
+          <div>
+            <div class="h-44 bg-navy-950 p-6 flex flex-col justify-between border-b-4 border-gold-400">
+              <span class="text-[10px] uppercase tracking-[0.2em] text-gold-400">Custom Web &amp; POS Suite</span>
+              <div class="grid grid-cols-3 gap-2">
+                <div class="h-14 bg-white/10 border border-white/15 p-2">
+                  <div class="w-6 h-1.5 bg-gold-400 mb-1"></div>
+                  <div class="w-10 h-2 bg-white/60"></div>
+                </div>
+                <div class="h-14 bg-white/10 border border-white/15 p-2">
+                  <div class="w-6 h-1.5 bg-gold-400 mb-1"></div>
+                  <div class="w-10 h-2 bg-white/60"></div>
+                </div>
+                <div class="h-14 bg-white/10 border border-white/15 p-2">
+                  <div class="w-6 h-1.5 bg-gold-400 mb-1"></div>
+                  <div class="w-10 h-2 bg-white/60"></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="font-editorial text-xl font-bold text-navy-900 mt-6">Retail POS &amp; Inventory Web Portal</h3>
+            <p class="text-sm text-navy-900/70 mt-2">Real-time stock tracking, automated invoicing, and responsive mobile dashboard for businesses.</p>
+          </div>
+          <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20build%20a%20custom%20Web%20Portal%20/%20Software%20System."
+             target="_blank" rel="noopener noreferrer"
+             class="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-gold-600 hover:text-navy-900">
+            <span>Request Software Demo</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Transparent Service Packages -->
+      <div class="pt-12 border-t border-navy-900/15">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-xs uppercase tracking-[0.24em] text-gold-600 font-bold block mb-3">Service Packages</span>
+          <h3 class="font-editorial text-3xl sm:text-4xl font-bold text-navy-900">Flexible Tiers for Every Need</h3>
+          <p class="text-sm text-navy-900/70 mt-3">Clear, transparent packages with instant WhatsApp ordering and custom quotes for bulk or enterprise projects.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          
+          <div class="bg-white border border-navy-900/15 p-8 flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-[0.2em] text-navy-900/60 font-bold">Tier 01</span>
+              <h4 class="font-editorial text-2xl font-bold text-navy-900 mt-2">Composing &amp; Formatting</h4>
+              <p class="text-xs text-navy-900/60 mt-1">Per-Page &amp; Document Packages</p>
+              <ul class="space-y-3 text-sm text-navy-900/80 mt-6 pt-6 border-t border-navy-900/10">
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> English &amp; Urdu Typing</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> Assignments, Essays &amp; Reports</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> Word, Excel &amp; PDF Formatting</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> Fast Same-Day Turnaround</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20Please%20share%20rates%20for%20Composing%20%26%20Formatting."
+               target="_blank" rel="noopener noreferrer"
+               class="mt-8 w-full py-3.5 text-center border border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white text-xs uppercase tracking-[0.18em] font-bold transition-colors">
+              Get Page Quote
+            </a>
+          </div>
+
+          <div class="bg-navy-900 text-white border-2 border-gold-400 p-8 flex flex-col justify-between shadow-xl">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-xs uppercase tracking-[0.2em] text-gold-400 font-bold">Tier 02 • Popular</span>
+                <span class="text-[10px] uppercase tracking-widest bg-gold-400 text-navy-950 px-2.5 py-0.5 font-bold">Career Pack</span>
+              </div>
+              <h4 class="font-editorial text-2xl font-bold text-white mt-2">Executive CV + Cover Letter</h4>
+              <p class="text-xs text-white/60 mt-1">Complete International Job Application Kit</p>
+              <ul class="space-y-3 text-sm text-white/85 mt-6 pt-6 border-t border-white/15">
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-400"></i> ATS-Optimized or Europass CV</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-400"></i> Tailored Cover Letter Included</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-400"></i> Editable Word + Print PDF Files</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-400"></i> Unlimited Revisions Until Approved</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20to%20order%20the%20Executive%20CV%20%2B%20Cover%20Letter%20Package."
+               target="_blank" rel="noopener noreferrer"
+               class="mt-8 w-full py-3.5 text-center bg-gold-400 hover:bg-gold-300 text-navy-950 text-xs uppercase tracking-[0.18em] font-bold transition-colors">
+              Order CV Package
+            </a>
+          </div>
+
+          <div class="bg-white border border-navy-900/15 p-8 flex flex-col justify-between">
+            <div>
+              <span class="text-xs uppercase tracking-[0.2em] text-navy-900/60 font-bold">Tier 03</span>
+              <h4 class="font-editorial text-2xl font-bold text-navy-900 mt-2">Custom Software &amp; Web</h4>
+              <p class="text-xs text-navy-900/60 mt-1">End-to-End Digital Development</p>
+              <ul class="space-y-3 text-sm text-navy-900/80 mt-6 pt-6 border-t border-navy-900/10">
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> Responsive Website / Web App</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> Android &amp; iOS Mobile Apps</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> Custom Domain, Hosting &amp; SSL</li>
+                <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-gold-600"></i> 100% Full Source Code Ownership</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum!%20I%20want%20a%20project%20quote%20for%20Custom%20Software%20/%20Website%20Development."
+               target="_blank" rel="noopener noreferrer"
+               class="mt-8 w-full py-3.5 text-center border border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white text-xs uppercase tracking-[0.18em] font-bold transition-colors">
+              Discuss Project
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Client Testimonials -->
+      <div class="mt-24 pt-16 border-t border-navy-900/15">
+        <span class="text-xs uppercase tracking-[0.24em] text-gold-600 font-bold block mb-3">Client Endorsements</span>
+        <h3 class="font-editorial text-3xl font-bold text-navy-900 mb-10">Trusted by Students, Professionals &amp; Founders</h3>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <blockquote class="bg-white p-8 border border-navy-900/10">
+            <p class="font-editorial italic text-lg text-navy-900 leading-relaxed">
+              “Ordered my Europass CV and cover letter via WhatsApp. Delivered the same evening with spotless formatting—shortlisted for two interviews in Germany within three weeks.”
+            </p>
+            <footer class="mt-6 pt-4 border-t border-navy-900/10">
+              <strong class="block text-sm text-navy-900">Hamza Tariq</strong>
+              <span class="text-xs text-navy-900/60">Mechanical Engineer</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="bg-white p-8 border border-navy-900/10">
+            <p class="font-editorial italic text-lg text-navy-900 leading-relaxed">
+              “Their Urdu and English thesis composing saved me days of stress. Every table, margin, and citation matched our university guidelines down to the millimeter.”
+            </p>
+            <footer class="mt-6 pt-4 border-t border-navy-900/10">
+              <strong class="block text-sm text-navy-900">Ayesha Siddiqui</strong>
+              <span class="text-xs text-navy-900/60">M.Phil Research Scholar</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="bg-white p-8 border border-navy-900/10">
+            <p class="font-editorial italic text-lg text-navy-900 leading-relaxed">
+              “They turned my rough business idea into a fast, modern web application with full source code ownership. Highly responsive communication on WhatsApp throughout.”
+            </p>
+            <footer class="mt-6 pt-4 border-t border-navy-900/10">
+              <strong class="block text-sm text-navy-900">Usman Ghani</strong>
+              <span class="text-xs text-navy-900/60">Retail Business Owner</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 07. CONTACT & INTERACTIVE WHATSAPP ORDER SECTION -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+        
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-xs uppercase tracking-[0.24em] text-gold-600 font-bold block mb-3">06 / Contact &amp; Direct Order</span>
+            <h2 class="font-editorial text-3xl sm:text-5xl font-bold text-navy-900 leading-tight">
+              Let’s Begin Your Project.
+            </h2>
+            <p class="text-sm text-navy-900/75 mt-4 leading-relaxed">
+              Fill out the quick order brief or click directly to chat with us on WhatsApp. Attach your files, notes, or ideas directly in the chat.
+            </p>
+          </div>
+
+          <div class="space-y-5 pt-4 border-t border-navy-900/10">
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 bg-navy-900 text-gold-400 flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-widest text-navy-900/60 font-semibold">Direct WhatsApp Line</span>
+                <a href="https://wa.me/923427836681" target="_blank" rel="noopener noreferrer" class="block font-editorial text-2xl font-bold text-navy-900 hover:text-gold-600 transition-colors">
+                  +92 342 7836681
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 bg-navy-900 text-gold-400 flex items-center justify-center shrink-0">
+                <i data-lucide="building-2" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <span class="text-xs uppercase tracking-widest text-navy-900/60 font-semibold">Studio Name</span>
+                <p class="font-editorial text-xl font-bold text-navy-900">Online Composing &amp; CV Maker</p>
+                <p class="text-xs text-navy-900/65 mt-0.5">Serving Clients Nationwide &amp; Internationally Online</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <span class="text-xs uppercase tracking-widest text-navy-900/60 font-semibold block mb-3">Connect With Us</span>
+            <div class="flex items-center gap-3">
+              <a href="https://wa.me/923427836681" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                 class="w-10 h-10 border border-navy-900/20 hover:bg-navy-900 hover:text-gold-400 flex items-center justify-center transition-colors">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+              </a>
+              <a href="#contact" aria-label="Facebook"
+                 class="w-10 h-10 border border-navy-900/20 hover:bg-navy-900 hover:text-gold-400 flex items-center justify-center transition-colors">
+                <i data-lucide="facebook" class="w-4 h-4"></i>
+              </a>
+              <a href="#contact" aria-label="Instagram"
+                 class="w-10 h-10 border border-navy-900/20 hover:bg-navy-900 hover:text-gold-400 flex items-center justify-center transition-colors">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+              </a>
+              <a href="#contact" aria-label="LinkedIn"
+                 class="w-10 h-10 border border-navy-900/20 hover:bg-navy-900 hover:text-gold-400 flex items-center justify-center transition-colors">
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <form id="whatsapp-order-form" class="bg-cream-50 p-8 sm:p-10 border border-navy-900/15 space-y-6">
+            <div class="border-b border-navy-900/10 pb-4">
+              <h3 class="font-editorial text-2xl font-bold text-navy-900">Instant WhatsApp Order Brief</h3>
+              <p class="text-xs text-navy-900/65 mt-1">Your details will open directly in WhatsApp (+92 342 7836681) ready to send.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label for="client-name" class="block text-xs uppercase tracking-widest font-semibold text-navy-900 mb-2">Your Full Name *</label>
+                <input type="text" id="client-name" required placeholder="e.g. Muhammad Ahmed"
+                       class="w-full bg-white border border-navy-900/20 px-4 py-3 text-sm text-navy-900 focus:outline-none focus:border-navy-900" />
+              </div>
+
+              <div>
+                <label for="service-category" class="block text-xs uppercase tracking-widest font-semibold text-navy-900 mb-2">Service Category *</label>
+                <select id="service-category" required
+                        class="w-full bg-white border border-navy-900/20 px-4 py-3 text-sm text-navy-900 focus:outline-none focus:border-navy-900">
+                  <optgroup label="Composing Services">
+                    <option value="English / Urdu Composing">English / Urdu Composing</option>
+                    <option value="Assignments & Projects">Assignments &amp; Projects</option>
+                    <option value="School, College & University Projects">School, College &amp; University Projects</option>
+                    <option value="Reports & Essays">Reports &amp; Essays</option>
+                    <option value="Business & Official Documents">Business &amp; Official Documents</option>
+                    <option value="Letters & Applications">Letters &amp; Applications</option>
+                    <option value="Typing & Formatting">Typing &amp; Formatting</option>
+                    <option value="Word, PDF & Excel Work">Word, PDF &amp; Excel Work</option>
+                  </optgroup>
+                  <optgroup label="CV Maker Services">
+                    <option value="ATS Friendly CV" selected>ATS Friendly CV</option>
+                    <option value="Europass CV">Europass CV</option>
+                    <option value="Professional CV">Professional CV</option>
+                    <option value="Modern Resume Design">Modern Resume Design</option>
+                    <option value="Cover Letter Writing">Cover Letter Writing</option>
+                  </optgroup>
+                  <optgroup label="Software Development">
+                    <option value="Web Application Development">Web Application Development</option>
+                    <option value="Mobile Application Development (Android & iOS)">Mobile Application Development (Android &amp; iOS)</option>
+                    <option value="Custom Software Development">Custom Software Development</option>
+                    <option value="Business Solutions">Business Solutions</option>
+                    <option value="Custom Website Development">Custom Website Development</option>
+                    <option value="Client's Own Idea / Custom Project">Client's Own Idea / Custom Project</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="deadline" class="block text-xs uppercase tracking-widest font-semibold text-navy-900 mb-2">Urgency / Delivery Timeline</label>
+              <select id="deadline"
+                      class="w-full bg-white border border-navy-900/20 px-4 py-3 text-sm text-navy-900 focus:outline-none focus:border-navy-900">
+                <option value="Standard Delivery (24-48 Hours)">Standard Delivery (24–48 Hours)</option>
+                <option value="Urgent / Same-Day Delivery">Urgent / Same-Day Delivery</option>
+                <option value="Custom Project Timeline">Custom Project Timeline (Software / Thesis)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="project-details" class="block text-xs uppercase tracking-widest font-semibold text-navy-900 mb-2">Project Requirements *</label>
+              <textarea id="project-details" rows="4" required placeholder="Briefly describe your document pages, target job role for CV, or software features..."
+                        class="w-full bg-white border border-navy-900/20 px-4 py-3 text-sm text-navy-900 focus:outline-none focus:border-navy-900"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 py-4 px-8 text-xs uppercase tracking-[0.2em] font-bold transition-all flex items-center justify-center gap-3 shadow-lg">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Send Order Directly on WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-white border-t border-gold-400/25">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+      <div class="grid md:grid-cols-12 gap-12 pb-12 border-b border-white/10">
+        
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="logo.png" alt="Logo" onerror="this.style.display='none'" class="w-9 h-9 object-contain bg-white p-1" />
+            <span class="font-editorial text-xl font-bold text-white">Online Composing &amp; CV Maker</span>
+          </div>
+          <p class="text-sm text-white/65 leading-relaxed max-w-sm">
+            Your dedicated partner for English &amp; Urdu composing, ATS &amp; Europass CVs, academic formatting, and custom web &amp; mobile software engineering.
+          </p>
+          <p class="text-xs font-mono text-gold-400">WhatsApp: +92 342 7836681</p>
+        </div>
+
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-xs uppercase tracking-[0.2em] text-gold-400 font-bold">Navigation</h4>
+          <ul class="space-y-2.5 text-sm text-white/70">
+            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+            <li><a href="#cv-maker" class="hover:text-white transition-colors">CV Maker Services</a></li>
+            <li><a href="#software" class="hover:text-white transition-colors">Software Development</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs uppercase tracking-[0.2em] text-gold-400 font-bold">Core Specialties</h4>
+          <ul class="space-y-2.5 text-sm text-white/70">
+            <li>Europass &amp; ATS-Friendly Resumes</li>
+            <li>English &amp; Urdu InPage Composing</li>
+            <li>University Projects &amp; Thesis Formatting</li>
+            <li>Web &amp; Mobile App Development</li>
+            <li>Custom Business &amp; Client Software Ideas</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+        <p>&copy; <span id="current-year"></span> Online Composing &amp; CV Maker. All Rights Reserved.</p>
+        <p>Designed for Precision • Fast WhatsApp Ordering</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/923427836681?text=Assalam-o-Alaikum%20Online%20Composing%20%26%20CV%20Maker!%20I%20would%20like%20to%20inquire%20about%20your%20services."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp"
+     class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-3.5 rounded-full shadow-2xl flex items-center gap-2.5 border border-white/20 transition-transform hover:scale-105">
+    <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
+    <span class="text-xs uppercase tracking-wider font-bold hidden sm:inline">Chat on WhatsApp</span>
+  </a>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    lucide.createIcons();
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    const filterButtons = document.querySelectorAll('.portfolio-filter');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-navy-900', 'text-white');
+          b.classList.add('bg-white', 'text-navy-900');
+        });
+        btn.classList.remove('bg-white', 'text-navy-900');
+        btn.classList.add('bg-navy-900', 'text-white');
+
+        const filter = btn.getAttribute('data-filter');
+        portfolioItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    const orderForm = document.getElementById('whatsapp-order-form');
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('client-name').value.trim();
+      const service = document.getElementById('service-category').value;
+      const timeline = document.getElementById('deadline').value;
+      const details = document.getElementById('project-details').value.trim();
+
+      const message =
+        `Assalam-o-Alaikum *Online Composing & CV Maker*!%0A%0A` +
+        `*New Website Order Inquiry*%0A` +
+        `• *Name:* ${encodeURIComponent(name)}%0A` +
+        `• *Service:* ${encodeURIComponent(service)}%0A` +
+        `• *Timeline:* ${encodeURIComponent(timeline)}%0A` +
+        `• *Details:* ${encodeURIComponent(details)}`;
+
+      window.open(`https://wa.me/923427836681?text=${message}`, '_blank');
+    });
+  </script>
+</body>
+</html>
